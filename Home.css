@@ -1,0 +1,360 @@
+@font-face {
+    font-family: optimus;
+    src: url(assets/fonts/OptimusPrinceps.ttf);
+}
+
+@font-face {
+    font-family: optimusBold;
+    src: url(assets/fonts/OptimusPrincepsSemiBold.ttf);
+}
+
+:root{
+    --Black: #1b1a17;
+    --Grey: #38322b;
+    --DarkBrown: #695442;
+    --Brown: #a78a6d;
+    --White: #f4efde;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: optimus;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #1b1a17;
+}
+
+.PopContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 45%;
+    background-color: red;
+    z-index: 10;
+    background-color: var(--DarkBrown);
+
+    transition: 200ms;
+    
+}
+
+.PopHeadingContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 50px;
+    
+}
+
+.PopHeadingTitle{
+    display: flex;
+    align-items: center;
+    color:var(--White);
+    font-size: 1.4em;
+
+}
+
+.PopHeadingContainer img{
+    height: 80%;
+    width: 50px;
+}
+
+.PopHeadingContainer img:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.TrailerBoxContainer{
+    display: flex;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: red;
+    background-image: url(assets/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.TrailerBox{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    gap:1.2em;
+}
+
+.TrailerBoxTitle{
+    font-size: 12em;
+    color: #f4efde;
+}
+
+.TrailerBoxSubtitle{
+    color: #a78a6d;
+    font-size: 3em;
+}
+
+.TrailerBoxSubSubtitle{
+    font-size: 2em;
+    color: #695442;
+}
+
+.ExpectContainer{
+    background-image: url(assets/images/background2.png);
+}
+
+.ExpectTitle{
+    font-size: 2.8em;
+    color: #695442;
+}
+
+.ExpectContentContainer{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2em;
+}
+
+.ExpectItemDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+
+    color: var(--White);
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 0%;
+    visibility: hidden;
+    overflow: hidden;
+    border: 5px solid var(--Brown);
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.ExpectItemContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    background-color: #a78a6d;
+    gap:10px;
+    margin-bottom: 30px ;
+}
+
+.ExpectItemContainer:hover .ExpectItemDesc{
+    visibility: visible;
+    height: 100%;
+    transition: ease-in-out 700ms;
+}
+
+.ExpectItemContainer > img{
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+}
+
+.ExpectItemContainer > div{
+    width: 100%;
+    color: var(--White);
+    font-size: 1.2em;
+}
+
+.AreaContainer{
+    background-color: black;
+    background-image: none;
+    flex-direction: row;
+    gap:2em;
+}
+
+.AreaLeftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-height: 100vh;
+    width: 30%;
+    color: var(--White);
+    gap:2em;
+}
+
+.AreaTitle{
+    font-size: 4.2em;
+}
+
+.AreaSubtitle{
+    font-size: 1.6em;
+}
+
+.AreaRightContainer{
+    display: flex;
+    background-image: url(assets/images/area/1.jpg_large);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 65%;
+}
+
+.AreaOptionContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.AreaOption{
+    width: 23%;
+    height: 270px;
+    box-shadow: none;
+    transition: 200ms;
+}
+
+.AreaOption img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.AreaOption:hover{
+    box-shadow: 0px 0px 15px var(--Brown);
+}
+
+.SoftwareContainer{
+    background-image: url(assets/images/background_3.jpg);
+    color: var(--White)
+}
+
+.SoftwareTitle{
+    font-size: 7em;
+}
+
+.SoftwareImgContainer{
+    display: flex;
+    justify-content: center;
+    gap:3em;
+    width: 80%;
+    height: 120px;
+}
+
+.SoftwareImgContainer img{
+    height: 100%;
+}
+
+.SoftwareSubtitle{
+    font-size: 2em;
+}
+
+.DemoBTN{
+    width: 20%;
+    font-size: 1.1em;
+    padding: 10px;
+    font-family: optimusBold;
+    margin-top: 40px;
+    color: var(--White);
+    background-color: var(--DarkBrown);
+    outline: none;
+    border: none;
+    transition: 400ms;
+}
+
+.DemoBTN:hover{
+    background-color: var(--Grey)
+}
+
+
+.CharacterContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.CarouselContainer{
+    display: flex;
+    justify-content: left;
+    width: 60%;
+    height: 80%;
+    background-color: var(--Brown);
+    position: relative;
+    overflow: hidden;
+}
+
+.CharacterItem{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    padding: 0;
+    transition: 200ms ease-in;
+    
+}
+
+.CharacterItem:hover{
+    box-shadow: 0px 0px 15px var(--White);
+}
+
+.CharacterDesc{
+    position: absolute;
+    width: 180%;
+    left: 110%;
+    text-align: center;
+    font-size: 1.2em;
+    /* visibility: hidden; */
+    
+}
+
+
+/* #character2{
+    transform: translateX(300%);
+} */
+
+/* #character3{
+    position: absolute;
+    transform: translateX(350%);
+} */
+
+#character2:active{
+    transform: translateX(50%);
+} 
+
+#character3:active{
+    transform: translateX(100%);
+} 
+
+
+.CharacterItem > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Soul</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+
+    <div class="PopContainer" id="PopContainer">
+        <div class="PopHeadingContainer">
+            <div class="PopHeadingTitle">
+                Pre-order ELDEN RING: Shadow of the ErdTree
+            </div>
+
+            <img src="assets/images/close_button.png" alt="Close Button" onclick="popUp()">
+        </div>
+
+        <video autoplay class="PopVideo" width="100%">
+            <source src="assets/videos/trailer.mp4">
+        </video>
+    </div>
+
+
+
+    
+    <div class="TrailerBoxContainer">
+        <div class="TrailerBox">
+            <div class="TrailerBoxTitle">
+                Black Soul
+            </div>
+
+            <div class="TrailerBoxSubtitle">
+                "EVERY SOUL HAS ITS BLACK..."
+            </div>
+
+            <div class="TrailerBoxSubSubtitle">
+                -John Blacksoul
+            </div>
+        </div>
+    </div>
+
+    <div class="TrailerBoxContainer ExpectContainer">
+        <div class="TrailerBox">
+            <div class="ExpectTitle">"WHAT TO EXPECT"</div>
+            
+            <div class="ExpectContentContainer">
+                <div class="ExpectItemContainer">
+                    <div class="ExpectItemDesc">
+                        Tired of Classic Summoning CO-OP? BlackSouls will introduce an unbound, seamless co-op!
+                    </div>
+                    <img src="assets/images/seamless_coop.jpeg" alt="seamless_coop">
+                    <div>Seemless Coop</div> 
+                </div>
+
+                <div class="ExpectItemContainer">
+                    <div class="ExpectItemDesc">
+                        We appreciate the feedback on unbalanced weapons, so we've decided to remove everything except for a single weapon!
+                    </div>
+                    <img src="assets/images/weapon_type.png" alt="seamless_coop">
+                    <div>Single Weapon Only</div>
+                </div>
+
+                <div class="ExpectItemContainer">
+                    <div class="ExpectItemDesc">
+                        One seem to blant, so why not double the trouble?
+                    </div>
+                    <img src="assets/images/bed-of-chaos.jpg" alt="seamless_coop">
+                    <div>Bed of Chaos Duo</div>
+                </div>
+
+                <div class="ExpectItemContainer">
+                    <div class="ExpectItemDesc">
+                        Using bonfire seems not to be as popular as we expected, so we decided to remove it
+                    </div>
+                    <img src="assets/images/bonfire.jpg" alt="seamless_coop">
+                    <div>No Bonfire</div>
+                </div>
+
+                <div class="ExpectItemContainer">
+                    <div class="ExpectItemDesc">
+                        The community doesn't seems to like using different builds, so we dedcided to limit to single build
+                    </div>
+                    <img src="assets/images/single_build.webp" alt="seamless_coop">
+                    <div>Single Build</div>
+                </div>
+
+                <div class="ExpectItemContainer">
+                    <div class="ExpectItemDesc">
+                        Previous games seems not to be challenging enough, so we decided to make every bosses has at least 10 frame perferct attacks!
+                    </div>
+                    <img src="assets/images/artificial_difficult.jpg" alt="seamless_coop">
+                    <div>Artificial Difficult</div>
+                </div>   
+            </div>  
+        </div>
+    </div>
+
+    <div class="TrailerBoxContainer AreaContainer">
+        <div class="AreaLeftContainer">
+            <div class="AreaTitle" id="AreaTitle">
+                SEA OF FLAMES
+            </div>
+
+            <div class="AreaSubtitle" id="AreaSubtitle">
+                A SCORCHING VOLCANIC WASTELAND WHERE FIRE AND ASH CHOKE THE AIR
+            </div>
+        </div>
+
+        <div class="AreaRightContainer" id="AreaImg">
+            
+        </div>
+    </div>
+
+
+    <div class="AreaOptionContainer">
+        <div class="AreaOption" onclick="setArea(0)" id="AreaOption0">
+            <img src="assets/images/area/1.jpg_large" alt="1">
+        </div>
+
+        <div class="AreaOption" onclick="setArea(1)" id="AreaOption1">
+            <img src="assets/images/area/2.jpg" alt="1">
+        </div>
+
+
+        <div class="AreaOption" onclick="setArea(2)" id="AreaOption2">
+            <img src="assets/images/area/3.jpg" alt="3">
+        </div>
+
+        <div class="AreaOption" onclick="setArea(3)" id="AreaOption3">
+            <img src="assets/images/area/4.webp" alt="4">
+        </div>
+    </div>
+
+    <div class="CharacterContainer">
+        <div class="CarouselContainer">
+            
+            <div class="CharacterItem" id="character1" onclick="carousel(1)">
+                <img src="assets/images/1.avif" alt="">
+
+                <div class="CharacterDesc" id="CharDesc1">
+                    A prodigy of a lost dance style, their movements once held a mystical grace that could revitalize the weary and even heal the wounded. However, a terrible plague twisted their art, transforming their graceful steps into a deadly ballet. Now, they flit through ruined cities, their dances a macabre performance that saps the life from those who witness it. The character is unsure if they are a harbinger of doom or a mercy killer, putting the afflicted out of their misery in the only way they know how.
+                </div>
+            </div>
+
+            <div class="CharacterItem" id="character2" onclick="carousel(2)">
+                <img src="assets/images/2.jpg" alt="">
+
+                <div class="CharacterDesc" id="CharDesc2">
+                    Once a promising young mage, they delved into forbidden texts, their hunger for knowledge outweighing caution. They unearthed secrets that corrupted their magic, twisting it into a chaotic and destructive force. Shunned by their former colleagues, they now wander the land, a solitary figure cloaked in shadows, wielding their warped magic as they seek a way to undo the damage they unleashed.
+                </div>
+            </div>
+
+            <div class="CharacterItem" id="character3" onclick="carousel(3)">
+                <img src="assets/images/3.webp" alt="">
+            
+            
+                <div class="CharacterDesc" id="CharDesc3">
+                    Clad in heavy armor etched with penitential prayers, this warrior is haunted by a past transgression. Perhaps they served a tyrannical king or slaughtered innocents in a fit of rage. Now, they wander the world, seeking redemption by vanquishing evil wherever they find it. Their weathered shield serves not only as defense but as a constant reminder of their past failures.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="TrailerBoxContainer SoftwareContainer">
+        <div class="TrailerBox">
+            <div class="SoftwareTitle">From Software</div>
+
+            <div class="SoftwareSubtitle">
+                Available Software:
+            </div>
+
+            <div class="SoftwareImgContainer">
+                <img src="assets/images/windows.png" alt="Windows">
+            
+                <img src="assets/images/ps.png" alt="PS">
+
+                <img src="assets/images/xbox.png" alt="xbox">
+            </div>
+
+
+            <button class="DemoBTN" onclick="redirectToDemo()"> TRY DEMO</button>
+
+        </div>
+
+    </div>
+
+    
+    <script type="text/javascript"   src="Home.js"></script>
+</body>
+</html>
